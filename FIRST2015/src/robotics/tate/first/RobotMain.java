@@ -199,7 +199,6 @@ public class RobotMain extends SimpleRobot {
         SmartDashboard.putDouble("Lift", lift.getPosition());
         SmartDashboard.putDouble("Motion Front", motionRight.getSpeed());
         watchdogOn();
-
         Watchdog.getInstance().feed();
         // lift.set(Relay.Value.kOn);
         updateDashboard();
