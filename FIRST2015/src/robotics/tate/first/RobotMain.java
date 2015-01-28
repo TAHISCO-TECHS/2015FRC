@@ -49,8 +49,8 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * directory.
  */
 public class RobotMain extends SimpleRobot {
-    //RobotDrive.MotorType Jaguar;
 
+    //RobotDrive.MotorType Jaguar;
     RobotDrive drive = new RobotDrive(1, 2);
     //private Jaguar driveSideL = new Jaguar(1);
     //private Jaguar driveSideR = new Jaguar(2);
@@ -101,59 +101,7 @@ public class RobotMain extends SimpleRobot {
                 lowDashData.finalizeCluster();
             }
             lowDashData.finalizeCluster();
-
-            /*lowDashData.addCluster();
-             { //digital modules
-             lowDashData.addCluster();
-             {
-             lowDashData.addCluster();
-             {
-             int module = 1;
-             lowDashData.addByte(DigitalModule.getInstance(module).getRelayForward());
-             lowDashData.addByte(DigitalModule.getInstance(module).getRelayForward());
-             lowDashData.addShort(DigitalModule.getInstance(module).getAllDIO());
-             lowDashData.addShort(DigitalModule.getInstance(module).getDIODirection());
-             lowDashData.addCluster();
-             {
-             for (int i = 1; i <= 10; i++) {
-             lowDashData.addByte((byte) DigitalModule.getInstance(module).getPWM(i));
-             }
-             }
-             lowDashData.finalizeCluster();
-             }
-             lowDashData.finalizeCluster();
-             }
-             lowDashData.finalizeCluster();
-
-             lowDashData.addCluster();
-             {
-             lowDashData.addCluster();
-             {
-             int module = 2;
-             lowDashData.addByte(DigitalModule.getInstance(module).getRelayForward());
-             lowDashData.addByte(DigitalModule.getInstance(module).getRelayReverse());
-             lowDashData.addShort(DigitalModule.getInstance(module).getAllDIO());
-             lowDashData.addShort(DigitalModule.getInstance(module).getDIODirection());
-             lowDashData.addCluster();
-             {
-             for (int i = 1; i <= 10; i++) {
-             lowDashData.addByte((byte) DigitalModule.getInstance(module).getPWM(i));
-             }
-             }
-             lowDashData.finalizeCluster();
-             }
-             lowDashData.finalizeCluster();
-             }
-             lowDashData.finalizeCluster();
-
-             }
-             lowDashData.finalizeCluster();
-
-             lowDashData.addByte(Solenoid.getAllFromDefaultModule());
-             }
-             lowDashData.finalizeCluster();*/
             lowDashData.commit();
-
         }
     }
 
